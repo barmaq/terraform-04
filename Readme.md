@@ -172,6 +172,8 @@ https://terraform-docs.io/user-guide/installation/
 \- Вот тут извиняюсь. Пока разбирался с модулем забыл про требование к названиям переменных. если критично - переделаю,  уж очень долго кластер создается ( около 8-10 минут )
   
   [mysql_plan](./mysql_plan.txt)   
+  
+    
   ![скриншот](./images/mysql1.png)   
   ![скриншот](./images/mysql2.png)   
   ![скриншот](./images/mysql3.png)   
