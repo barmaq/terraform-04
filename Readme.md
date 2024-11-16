@@ -41,7 +41,7 @@
 
 
   скриншот подключения к консоли и вывод команды sudo nginx -t
-  ![скриншот](./images/nginx install.png)
+  ![скриншот](./images/nginx.png)
   скриншот консоли ВМ yandex cloud с их метками.
   ![скриншот](./images/label.png)
   Откройте terraform console и предоставьте скриншот содержимого модуля
