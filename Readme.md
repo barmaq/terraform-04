@@ -38,15 +38,15 @@
 *}*
 
 Обратите внимание, что ssh-authorized-keys принимает в себя список, а не строку - на случай если надо добавить несколько ключей
+  
 
-
-  скриншот подключения к консоли и вывод команды sudo nginx -t
+  скриншот подключения к консоли и вывод команды sudo nginx -t  
   ![скриншот](./images/nginx.png)
-  скриншот консоли ВМ yandex cloud с их метками.
+  скриншот консоли ВМ yandex cloud с их метками.  
   ![скриншот](./images/label.png)
-  Откройте terraform console и предоставьте скриншот содержимого модуля
+  Откройте terraform console и предоставьте скриншот содержимого модуля  
   ![скриншот](./images/console.png)
-
+  
 
 **Задание 2**
 
@@ -93,11 +93,11 @@ https://terraform-docs.io/user-guide/installation/
 *terraform-docs markdown . > README.md*
 
 получаем файл  README.md в папке модуля
-
-  Пришлите скриншот информации из terraform console о своем модуле. Пример: > module.vpc_dev
-  ![скриншот](./images/module.vpc_dev.png)
-  Сгенерируйте документацию к модулю с помощью terraform-docs 
-  [readme](./vpc/README.md)
+  
+  Пришлите скриншот информации из terraform console о своем модуле. Пример: > module.vpc_dev  
+  ![скриншот](./images/module.vpc_dev.png)  
+  Сгенерируйте документацию к модулю с помощью terraform-docs   
+  [readme](./vpc/README.md)  
 
 **Задание 3**
 
@@ -122,6 +122,11 @@ https://terraform-docs.io/user-guide/installation/
 *terraform import module.vpc\_dev.yandex\_vpc\_network.this <network-id>*
 
 *terraform import module.vpc\_dev.yandex\_vpc\_subnet.this <subnet-id>*
+
+  Проверьте terraform plan. Значимых(!!) изменений быть не должно. Приложите список выполненных команд и скриншоты процессы.  
+  ![скриншот](./images/state_1.png)  
+  ![скриншот](./images/state_2.png)  
+  ![скриншот](./images/state_3.png)  
 
 
 **задание 4**
@@ -151,6 +156,9 @@ https://terraform-docs.io/user-guide/installation/
 или
 
 *[for key, subnet in module.vpc\_dev.yandex\_vpc\_subnet\_info : subnet.zone]*
+
+
+изменеый модуль в ./vpc2
 
 
 **Задание 5**
