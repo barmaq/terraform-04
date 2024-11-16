@@ -2,25 +2,25 @@
 
 Возьмите из демонстрации к лекции готовый код для создания с помощью двух вызовов remote-модуля -> двух ВМ,
 
-` `относящихся к разным проектам(marketing и analytics) используйте labels для обозначения принадлежности.
+относящихся к разным проектам(marketing и analytics) используйте labels для обозначения принадлежности.
 
-` `В файле cloud-init.yml необходимо использовать переменную для ssh-ключа вместо хардкода.
+В файле cloud-init.yml необходимо использовать переменную для ssh-ключа вместо хардкода.
 
-` `Передайте ssh-ключ в функцию template\_file в блоке vars ={} . Воспользуйтесь примером. Обратите внимание, что ssh-authorized-keys принимает в себя список, а не строку.
+Передайте ssh-ключ в функцию template\_file в блоке vars ={} . Воспользуйтесь примером. Обратите внимание, что ssh-authorized-keys принимает в себя список, а не строку.
 
 взял код из предложенного примера.
 
-` `поменял labels на 
+поменял labels на 
 
 
 
-`     `*labels = {* 
+*labels = {* 
 
-`    `*# owner= "i.ivanov",*
+*# owner= "i.ivanov",*
 
-`    `*project = "analytics"*
+*project = "analytics"*
 
-`     `*}*
+*}*
 
 
 
@@ -28,13 +28,12 @@
 
 *data "template\_file" "cloudinit" {*
 
-`  `*template = file("./cloud-init.yml")*
+*template = file("./cloud-init.yml")*
 
-`  `*vars = {*
+*vars = {*
 
-`    `*ssh\_public\_key     = file("~/.ssh/ycbarmaq.pub")*
-
-`  `*}*
+*ssh\_public\_key     = file("~/.ssh/ycbarmaq.pub")*
+*}*
 
 *}*
 
