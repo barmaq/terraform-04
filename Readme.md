@@ -94,6 +94,10 @@ https://terraform-docs.io/user-guide/installation/
 
 получаем файл  README.md в папке модуля
 
+  Пришлите скриншот информации из terraform console о своем модуле. Пример: > module.vpc_dev
+  ![скриншот](./images/module.vpc_dev.png)
+  Сгенерируйте документацию к модулю с помощью terraform-docs 
+  [readme](./vpc/README.md)
 
 **Задание 3**
 
