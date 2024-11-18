@@ -119,14 +119,24 @@ https://terraform-docs.io/user-guide/installation/
 
 Импортируйте всё обратно. Проверьте terraform plan. Значимых(!!) изменений быть не должно. Приложите список выполненных команд и скриншоты процессы.
 
-*terraform import module.vpc\_dev.yandex\_vpc\_network.this <network-id>*
-
-*terraform import module.vpc\_dev.yandex\_vpc\_subnet.this <subnet-id>*
+terraform import module.test-vm.yandex_compute_instance.vm[0] fhmvdsf61aihp240e92k  
+terraform import module.test-vm2.yandex_compute_instance.vm[0] fhmldla5msarc74ac033  
+terraform import module.vpc_dev.yandex_vpc_network.develop enpkhmkm2221odipe126  
+*terraform import module.vpc_dev.yandex_vpc_subnet.develop e9b0iv1bgdtji3jjo56b  
 
   Проверьте terraform plan. Значимых(!!) изменений быть не должно. Приложите список выполненных команд и скриншоты процессы.  
   ![скриншот](./images/state_1.png)  
   ![скриншот](./images/state_2.png)  
   ![скриншот](./images/state_3.png)  
+
+terraform state list
+data.template_file.cloudinit
+module.test-vm.data.yandex_compute_image.my_image
+module.test-vm.yandex_compute_instance.vm[0]
+module.test-vm2.data.yandex_compute_image.my_image
+module.test-vm2.yandex_compute_instance.vm[0]
+module.vpc_dev.yandex_vpc_network.develop
+module.vpc_dev.yandex_vpc_subnet.develop
 
 
 **задание 4**
