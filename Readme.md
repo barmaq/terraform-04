@@ -118,6 +118,7 @@ https://terraform-docs.io/user-guide/installation/
 *terraform state rm*
 
 Импортируйте всё обратно. Проверьте terraform plan. Значимых(!!) изменений быть не должно. Приложите список выполненных команд и скриншоты процессы.
+module.test-vm2.data.yandex_compute_image.my_image   - не импортируются добавляются напрямую ! импортируем ид машины
 
 terraform import module.test-vm.yandex_compute_instance.vm[0] fhmvdsf61aihp240e92k  
 terraform import module.test-vm2.yandex_compute_instance.vm[0] fhmldla5msarc74ac033  
